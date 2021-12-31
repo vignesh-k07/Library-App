@@ -4,6 +4,7 @@ const cors = require('cors');               //Part #1 Point 1(package.json-main:
 const bodyParser = require('body-parser'); //Part #1 Point 2
 
 const nav = require('./src/data/nav'); //Part #2 Point 6
+const PORT = Process.env.PORT || 3000;
 
 const loginRouter = require('./src/routes/loginroute');
 const signupRouter = require('./src/routes/signuproute');
@@ -41,6 +42,6 @@ app.get('/',function(req,res){
 
 
 
-app.listen(5000,()=>{
-    console.log("Server Ready on 5000"); //Part #1 Point 5
+app.listen(PORT,()=>{
+    console.log("Server Ready on port: " + PORT); //Part #1 Point 5
 });
