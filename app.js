@@ -4,7 +4,7 @@ const cors = require('cors');               //Part #1 Point 1(package.json-main:
 const bodyParser = require('body-parser'); //Part #1 Point 2
 
 const nav = require('./src/data/nav'); //Part #2 Point 6
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 5000;
 
 const loginRouter = require('./src/routes/loginroute');
 const signupRouter = require('./src/routes/signuproute');
